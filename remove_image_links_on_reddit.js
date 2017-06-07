@@ -12,17 +12,17 @@
 
 
 (function() { 
-linklist = document.getElementsByClassName("link");
-for( var i=0; i < linklist.length; i++ ) {
-      domain = linklist[i].getAttribute("data-domain");
-      console.log(domain);
-      if( domain.indexOf("redd.it") >= 0 ||
-          domain.indexOf("imgur") >= 0 ||
-          domain.indexOf("gfycat") >= 0 ||
-          domain.indexOf("reddit") >= 0 ||
-          domain.indexOf("giphy") >= 0
-        ) {
-        linklist[i].style.setProperty("display", "none", "important");
-      }
-}
+    linklist = document.getElementsByClassName("link");
+    for( var i=0; i < linklist.length; i++ ) {
+	domain = linklist[i].getAttribute("data-domain");
+	console.log(domain);
+	if( domain.indexOf("redd.it") >= 0 ||
+            domain.indexOf("imgur") >= 0 ||
+            domain.indexOf("gfycat") >= 0 ||
+            domain.indexOf("reddit") >= 0 ||
+            domain.indexOf("giphy") >= 0
+          ) {
+              linklist[i].style.setProperty("display", "none", "important");
+	  }
+    }
 })();
